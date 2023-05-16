@@ -4,93 +4,11 @@
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
 	background-color: #222;
 	color: white;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-}
-
-main {
-	// width: min(100% - 20px, 300px);
-	margin-inline: auto;
-	margin-block: 1rem;
-}
-
-form {
-	background-color: #333;
-	padding: 1rem;
-	margin-bottom: 2rem;
-}
-
-h1 {
-	font-size: 17px;
-}
-
-h2 {
-	font-size: 15px;
-	margin-top: 0.7rem;
-	margin-bottom: 0.3rem;
-	font-weight: 400;
-}
-
-.delete {
-	background-color: crimson;
-	border: none;
-	outline: none;
-	display: block;
-	color: white;
-	padding: 0.5rem;
-	margin-top: 0.5rem;
-}
-
-.flex {
-	.postInputs {
-		input {
-			margin-block: 0.5rem;
-			padding: 0.7rem;
-			width: 100%;
-		}
-
-		button {
-			padding: 1rem;
-			background-color: black;
-			color: white;
-			border: none;
-			outline: none;
-			width: 100%;
-			font-weight: bold;
-			cursor: pointer;
-			margin-top: 1rem;
-			&:active {
-				scale: 1.03;
-			}
-
-			&:disabled {
-				background-color: grey;
-				color: black;
-				cursor: default;
-				&:active {
-					scale: 1;
-				}
-			}
-		}
-	}
-
-	.posts {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-		.singlePost {
-			background-color: #333;
-			padding: 0.8rem;
-			border-radius: 7px;
-			span {
-				font-weight: 200;
-				font-size: 13px;
-			}
-		}
-	}
 }
